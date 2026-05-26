@@ -1,5 +1,25 @@
 # Changelog
 
+## v4.0 - Hands-On PCAP and Wireshark Evidence Layer
+
+### Added
+
+- Added benign self-generated packet capture: `captures/benign-dns-http-lab.pcap`
+- Added Wireshark-style DNS filter screenshot: `screenshots/wireshark-dns-filter.svg`
+- Added Wireshark-style HTTP filter screenshot: `screenshots/wireshark-http-filter.svg`
+- Added packet observations screenshot: `screenshots/packet-observations.svg`
+- Added tcpdump DNS output: `tool-output/tcpdump-dns-output.txt`
+- Added tcpdump HTTP output: `tool-output/tcpdump-http-output.txt`
+- Added packet review notes: `traffic-analysis/pcap-wireshark-analysis.md`
+- Added packet evidence summary: `reports/packet-evidence-summary.md`
+- Added packet observations data: `data/packet-observations.csv`
+
+### Changed
+
+- Updated README to include inline packet evidence screenshots
+- Reframed the lab as including actual packet-level evidence
+- Clarified that the PCAP is benign and self-generated, not malware traffic
+
 ## v3.0 - Analyst Depth and Detection Logic Upgrade
 
 ### Added

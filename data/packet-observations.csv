@@ -1,0 +1,6 @@
+observation_id,protocol,source,evidence,result,analyst_note
+1,dns,10.10.20.17,a8d3k2.billing-update.test,NXDOMAIN,First random-looking DNS query in burst
+2,dns,10.10.20.17,b7q9x1.billing-update.test,NXDOMAIN,Similar subdomain shape and short interval
+3,dns,10.10.20.17,cdn-update.invalid,A 203.0.113.90,New destination resolved after NXDOMAIN burst
+4,http,10.10.20.17,GET /checkin to 203.0.113.90,200 OK,HTTP check-in after DNS activity
+5,http,10.10.20.17,Repeated /checkin every 5 minutes,200 OK,Consistent interval increases suspicion

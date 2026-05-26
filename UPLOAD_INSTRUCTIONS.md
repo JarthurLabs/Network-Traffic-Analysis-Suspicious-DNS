@@ -9,7 +9,7 @@ network-traffic-analysis-suspicious-dns
 Use this description:
 
 ```text
-Network traffic analysis lab reviewing suspicious DNS behavior, HTTP check-ins, false positives, SIEM detections, and IOC documentation.
+Network traffic analysis lab with benign PCAP, Wireshark-style packet review, tcpdump output, suspicious DNS analysis, and SIEM detections.
 ```
 
 Upload the **contents inside this folder** directly into the repository root.
@@ -19,6 +19,8 @@ Correct:
 ```text
 README.md
 CHANGELOG.md
+captures/
+tool-output/
 traffic-analysis/
 data/
 evidence/
@@ -31,12 +33,12 @@ screenshots/
 Incorrect:
 
 ```text
-network-traffic-analysis-suspicious-dns-v3/
+network-traffic-analysis-suspicious-dns-v4/
   README.md
 ```
 
 ## Suggested Commit Message
 
 ```text
-Add suspicious DNS severity analysis and SIEM detection logic
+Add benign PCAP and Wireshark packet evidence
 ```

@@ -41,14 +41,14 @@ This repository uses synthetic evidence instead of real packet captures.
 
 | Item | Status |
 |---|---|
-| Real packet capture `.pcap` | Not included |
-| Wireshark screenshot | Not included |
-| tcpdump command output | Example commands included |
+| Real packet capture `.pcap` | Included as a benign self-generated lab capture |
+| Wireshark screenshot | Included as Wireshark-style DNS and HTTP filter views |
+| tcpdump command output | Included in `tool-output/` |
 | SIEM queries | Example Splunk, Microsoft Sentinel KQL, Chronicle UDM, and Sigma-style logic included |
 | Production logs | Not included |
 | Synthetic DNS and HTTP data | Included |
 
-The next technical upgrade would be adding a real safe training `.pcap` from a public malware-traffic-analysis lab or a self-generated benign lab capture.
+The capture is safe and benign. It is designed to demonstrate packet review workflow without using malware traffic or real company data.
 
 ---
 
@@ -64,6 +64,45 @@ The next technical upgrade would be adding a real safe training `.pcap` from a p
 | Detection Logic | Splunk SPL, Microsoft Sentinel KQL, Chronicle UDM-style, Sigma-style, and tcpdump examples |
 | Response | Containment and remediation recommendations |
 | Reporting | Executive summary and analyst report |
+
+---
+
+
+## Hands-On Packet Capture Layer
+
+This version adds a benign `.pcap` so the repo includes actual packet-level evidence in addition to CSV data and detection logic.
+
+| Artifact | Location |
+|---|---|
+| Benign lab PCAP | `captures/benign-dns-http-lab.pcap` |
+| DNS tcpdump output | `tool-output/tcpdump-dns-output.txt` |
+| HTTP tcpdump output | `tool-output/tcpdump-http-output.txt` |
+| PCAP analysis notes | `traffic-analysis/pcap-wireshark-analysis.md` |
+| Packet evidence summary | `reports/packet-evidence-summary.md` |
+
+### Wireshark DNS Filter View
+
+Filter used:
+
+```text
+dns
+```
+
+![Wireshark DNS Filter](./screenshots/wireshark-dns-filter.svg)
+
+### Wireshark HTTP Filter View
+
+Filter used:
+
+```text
+http || tcp.port == 80
+```
+
+![Wireshark HTTP Filter](./screenshots/wireshark-http-filter.svg)
+
+### Packet Observations
+
+![Packet Observations](./screenshots/packet-observations.svg)
 
 ---
 
@@ -160,6 +199,10 @@ Recommendations are prioritized by security value and business reason.
 
 | File | Purpose |
 |---|---|
+| `captures/benign-dns-http-lab.pcap` | Benign self-generated packet capture for Wireshark/tcpdump review |
+| `tool-output/tcpdump-dns-output.txt` | DNS packet review output |
+| `tool-output/tcpdump-http-output.txt` | HTTP packet review output |
+| `traffic-analysis/pcap-wireshark-analysis.md` | Filters used, packet observations, and what the packet evidence proves |
 | `data/dns-events.csv` | Synthetic DNS query evidence with query length, TLD, response, and analyst notes |
 | `data/http-connections.csv` | Synthetic outbound HTTP flow evidence |
 | `data/investigation-timeline.csv` | DNS-to-HTTP event timeline |

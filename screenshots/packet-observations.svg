@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="760" viewBox="0 0 1280 760">
+<rect width="1280" height="760" fill="#f8fafc"/>
+<rect x="20" y="20" width="1240" height="720" rx="24" fill="#e2e8f0"/>
+<rect x="40" y="40" width="1200" height="96" rx="16" fill="#0f172a"/>
+<text x="70" y="82" font-size="30" font-family="Arial" fill="#ffffff" font-weight="700">Packet Observations</text>
+<text x="70" y="114" font-size="18" font-family="Arial" fill="#cbd5e1">3-5 evidence points from the included benign DNS/HTTP lab capture</text>
+<rect x="40" y="170" width="70" height="56" fill="#1e293b" stroke="#334155"/>
+<text x="50" y="205" font-size="15" font-family="Arial" fill="#ffffff" font-weight="700">ID</text>
+<rect x="110" y="170" width="130" height="56" fill="#1e293b" stroke="#334155"/>
+<text x="120" y="205" font-size="15" font-family="Arial" fill="#ffffff" font-weight="700">Protocol</text>
+<rect x="240" y="170" width="360" height="56" fill="#1e293b" stroke="#334155"/>
+<text x="250" y="205" font-size="15" font-family="Arial" fill="#ffffff" font-weight="700">Evidence</text>
+<rect x="600" y="170" width="200" height="56" fill="#1e293b" stroke="#334155"/>
+<text x="610" y="205" font-size="15" font-family="Arial" fill="#ffffff" font-weight="700">Result</text>
+<rect x="800" y="170" width="440" height="56" fill="#1e293b" stroke="#334155"/>
+<text x="810" y="205" font-size="15" font-family="Arial" fill="#ffffff" font-weight="700">Analyst Note</text>
+<rect x="40" y="226" width="70" height="56" fill="#ffffff" stroke="#cbd5e1"/>
+<text x="50" y="260" font-size="14" font-family="Arial" fill="#0f172a">1</text>
+<rect x="110" y="226" width="130" height="56" fill="#ffffff" stroke="#cbd5e1"/>
+<text x="120" y="260" font-size="14" font-family="Arial" fill="#0f172a">dns</text>
+<rect x="240" y="226" width="360" height="56" fill="#ffffff" stroke="#cbd5e1"/>
+<text x="250" y="260" font-size="14" font-family="Arial" fill="#0f172a">a8d3k2.billing-update.test</text>
+<rect x="600" y="226" width="200" height="56" fill="#ffffff" stroke="#cbd5e1"/>
+<text x="610" y="260" font-size="14" font-family="Arial" fill="#0f172a">NXDOMAIN</text>
+<rect x="800" y="226" width="440" height="56" fill="#ffffff" stroke="#cbd5e1"/>
+<text x="810" y="260" font-size="14" font-family="Arial" fill="#0f172a">First random-looking DNS query in burst</text>
+<rect x="40" y="282" width="70" height="56" fill="#f1f5f9" stroke="#cbd5e1"/>
+<text x="50" y="316" font-size="14" font-family="Arial" fill="#0f172a">2</text>
+<rect x="110" y="282" width="130" height="56" fill="#f1f5f9" stroke="#cbd5e1"/>
+<text x="120" y="316" font-size="14" font-family="Arial" fill="#0f172a">dns</text>
+<rect x="240" y="282" width="360" height="56" fill="#f1f5f9" stroke="#cbd5e1"/>
+<text x="250" y="316" font-size="14" font-family="Arial" fill="#0f172a">b7q9x1.billing-update.test</text>
+<rect x="600" y="282" width="200" height="56" fill="#f1f5f9" stroke="#cbd5e1"/>
+<text x="610" y="316" font-size="14" font-family="Arial" fill="#0f172a">NXDOMAIN</text>
+<rect x="800" y="282" width="440" height="56" fill="#f1f5f9" stroke="#cbd5e1"/>
+<text x="810" y="316" font-size="14" font-family="Arial" fill="#0f172a">Similar subdomain shape and short interval</text>
+<rect x="40" y="338" width="70" height="56" fill="#ffffff" stroke="#cbd5e1"/>
+<text x="50" y="372" font-size="14" font-family="Arial" fill="#0f172a">3</text>
+<rect x="110" y="338" width="130" height="56" fill="#ffffff" stroke="#cbd5e1"/>
+<text x="120" y="372" font-size="14" font-family="Arial" fill="#0f172a">dns</text>
+<rect x="240" y="338" width="360" height="56" fill="#ffffff" stroke="#cbd5e1"/>
+<text x="250" y="372" font-size="14" font-family="Arial" fill="#0f172a">cdn-update.invalid</text>
+<rect x="600" y="338" width="200" height="56" fill="#ffffff" stroke="#cbd5e1"/>
+<text x="610" y="372" font-size="14" font-family="Arial" fill="#0f172a">A 203.0.113.90</text>
+<rect x="800" y="338" width="440" height="56" fill="#ffffff" stroke="#cbd5e1"/>
+<text x="810" y="372" font-size="14" font-family="Arial" fill="#0f172a">New destination resolved after NXDOMAIN bu</text>
+<rect x="40" y="394" width="70" height="56" fill="#f1f5f9" stroke="#cbd5e1"/>
+<text x="50" y="428" font-size="14" font-family="Arial" fill="#0f172a">4</text>
+<rect x="110" y="394" width="130" height="56" fill="#f1f5f9" stroke="#cbd5e1"/>
+<text x="120" y="428" font-size="14" font-family="Arial" fill="#0f172a">http</text>
+<rect x="240" y="394" width="360" height="56" fill="#f1f5f9" stroke="#cbd5e1"/>
+<text x="250" y="428" font-size="14" font-family="Arial" fill="#0f172a">GET /checkin to 203.0.113.90</text>
+<rect x="600" y="394" width="200" height="56" fill="#f1f5f9" stroke="#cbd5e1"/>
+<text x="610" y="428" font-size="14" font-family="Arial" fill="#0f172a">200 OK</text>
+<rect x="800" y="394" width="440" height="56" fill="#f1f5f9" stroke="#cbd5e1"/>
+<text x="810" y="428" font-size="14" font-family="Arial" fill="#0f172a">HTTP check-in after DNS activity</text>
+<rect x="40" y="450" width="70" height="56" fill="#ffffff" stroke="#cbd5e1"/>
+<text x="50" y="484" font-size="14" font-family="Arial" fill="#0f172a">5</text>
+<rect x="110" y="450" width="130" height="56" fill="#ffffff" stroke="#cbd5e1"/>
+<text x="120" y="484" font-size="14" font-family="Arial" fill="#0f172a">http</text>
+<rect x="240" y="450" width="360" height="56" fill="#ffffff" stroke="#cbd5e1"/>
+<text x="250" y="484" font-size="14" font-family="Arial" fill="#0f172a">Repeated /checkin every 5 minutes</text>
+<rect x="600" y="450" width="200" height="56" fill="#ffffff" stroke="#cbd5e1"/>
+<text x="610" y="484" font-size="14" font-family="Arial" fill="#0f172a">200 OK</text>
+<rect x="800" y="450" width="440" height="56" fill="#ffffff" stroke="#cbd5e1"/>
+<text x="810" y="484" font-size="14" font-family="Arial" fill="#0f172a">Consistent interval increases suspicion</text>
+<text x="40" y="720" font-size="17" font-family="Arial" fill="#475569">Observations are derived from the included benign lab PCAP and tcpdump output.</text>
+</svg>

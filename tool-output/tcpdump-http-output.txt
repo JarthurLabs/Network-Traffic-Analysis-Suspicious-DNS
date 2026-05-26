@@ -1,0 +1,5 @@
+reading from file benign-dns-http-lab.pcap, link-type EN10MB (Ethernet)
+13:02:16 IP 10.10.20.17.50100 > 203.0.113.90.80: Flags [P.], length 91: HTTP: GET /checkin HTTP/1.1
+13:07:16 IP 10.10.20.17.50101 > 203.0.113.90.80: Flags [P.], length 91: HTTP: GET /checkin HTTP/1.1
+13:12:16 IP 10.10.20.17.50102 > 203.0.113.90.80: Flags [P.], length 91: HTTP: GET /checkin HTTP/1.1
+13:08:06 IP 10.10.20.17.50600 > 198.51.100.25.80: Flags [P.], length 99: HTTP: GET /api/status HTTP/1.1
