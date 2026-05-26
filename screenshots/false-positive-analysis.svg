@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="760" viewBox="0 0 1280 760">
+<rect width="1280" height="760" fill="#f8fafc"/>
+<rect x="20" y="20" width="1240" height="720" rx="24" fill="#e2e8f0"/>
+<rect x="40" y="40" width="1200" height="96" rx="16" fill="#0f172a"/>
+<text x="70" y="82" font-size="30" font-family="Arial" fill="#ffffff" font-weight="700">False Positive Analysis</text>
+<text x="70" y="114" font-size="18" font-family="Arial" fill="#cbd5e1">Benign explanations that should be ruled out before escalation</text>
+<rect x="40" y="170" width="310" height="54" fill="#1e293b" stroke="#334155"/>
+<text x="52" y="203" font-size="16" font-family="Arial" fill="#ffffff" font-weight="700">Benign Cause</text>
+<rect x="350" y="170" width="410" height="54" fill="#1e293b" stroke="#334155"/>
+<text x="362" y="203" font-size="16" font-family="Arial" fill="#ffffff" font-weight="700">Why Similar</text>
+<rect x="760" y="170" width="480" height="54" fill="#1e293b" stroke="#334155"/>
+<text x="772" y="203" font-size="16" font-family="Arial" fill="#ffffff" font-weight="700">Validation Step</text>
+<rect x="40" y="224" width="310" height="54" fill="#ffffff" stroke="#cbd5e1"/>
+<text x="50" y="256" font-size="14" font-family="Arial" fill="#0f172a">Software update service</text>
+<rect x="350" y="224" width="410" height="54" fill="#ffffff" stroke="#cbd5e1"/>
+<text x="360" y="256" font-size="14" font-family="Arial" fill="#0f172a">Update clients may query CDNs frequently</text>
+<rect x="760" y="224" width="480" height="54" fill="#ffffff" stroke="#cbd5e1"/>
+<text x="770" y="256" font-size="14" font-family="Arial" fill="#0f172a">Check known vendor list and signed process</text>
+<rect x="40" y="278" width="310" height="54" fill="#f1f5f9" stroke="#cbd5e1"/>
+<text x="50" y="310" font-size="14" font-family="Arial" fill="#0f172a">Browser prefetching</text>
+<rect x="350" y="278" width="410" height="54" fill="#f1f5f9" stroke="#cbd5e1"/>
+<text x="360" y="310" font-size="14" font-family="Arial" fill="#0f172a">Browsers may pre-resolve domains</text>
+<rect x="760" y="278" width="480" height="54" fill="#f1f5f9" stroke="#cbd5e1"/>
+<text x="770" y="310" font-size="14" font-family="Arial" fill="#0f172a">Compare against browser history and normal </text>
+<rect x="40" y="332" width="310" height="54" fill="#ffffff" stroke="#cbd5e1"/>
+<text x="50" y="364" font-size="14" font-family="Arial" fill="#0f172a">Security tool telemetry</text>
+<rect x="350" y="332" width="410" height="54" fill="#ffffff" stroke="#cbd5e1"/>
+<text x="360" y="364" font-size="14" font-family="Arial" fill="#0f172a">EDR/DNS tools may beacon normally</text>
+<rect x="760" y="332" width="480" height="54" fill="#ffffff" stroke="#cbd5e1"/>
+<text x="770" y="364" font-size="14" font-family="Arial" fill="#0f172a">Validate agent/vendor documentation</text>
+<rect x="40" y="386" width="310" height="54" fill="#f1f5f9" stroke="#cbd5e1"/>
+<text x="50" y="418" font-size="14" font-family="Arial" fill="#0f172a">Misconfigured internal app</text>
+<rect x="350" y="386" width="410" height="54" fill="#f1f5f9" stroke="#cbd5e1"/>
+<text x="360" y="418" font-size="14" font-family="Arial" fill="#0f172a">Broken app may create repeated DNS failures</text>
+<rect x="760" y="386" width="480" height="54" fill="#f1f5f9" stroke="#cbd5e1"/>
+<text x="770" y="418" font-size="14" font-family="Arial" fill="#0f172a">Check asset owner and application logs</text>
+<rect x="40" y="440" width="310" height="54" fill="#ffffff" stroke="#cbd5e1"/>
+<text x="50" y="472" font-size="14" font-family="Arial" fill="#0f172a">Ad/tracker traffic</text>
+<rect x="350" y="440" width="410" height="54" fill="#ffffff" stroke="#cbd5e1"/>
+<text x="360" y="472" font-size="14" font-family="Arial" fill="#0f172a">Websites can trigger unusual domains</text>
+<rect x="760" y="440" width="480" height="54" fill="#ffffff" stroke="#cbd5e1"/>
+<text x="770" y="472" font-size="14" font-family="Arial" fill="#0f172a">Correlate with user browsing session</text>
+<text x="40" y="720" font-size="17" font-family="Arial" fill="#475569">Synthetic lab screenshot for GitHub README and public security portfolio documentation</text>
+</svg>

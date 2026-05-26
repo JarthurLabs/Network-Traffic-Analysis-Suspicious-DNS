@@ -1,5 +1,5 @@
-timestamp,source_host,destination_ip,method,path,analysis
-2026-05-14 13:02:14,10.10.20.17,203.0.113.90,GET,/checkin,Suspicious periodic request
-2026-05-14 13:07:14,10.10.20.17,203.0.113.90,GET,/checkin,Repeated interval
-2026-05-14 13:12:14,10.10.20.17,203.0.113.90,GET,/checkin,Repeated interval
-2026-05-14 13:18:02,10.10.20.17,198.51.100.25,GET,/api/status,Known vendor traffic
+timestamp,source_host,destination_ip,method,path,status_code,analysis
+2026-05-14 13:02:14,10.10.20.17,203.0.113.90,GET,/checkin,200,Suspicious periodic request after DNS burst
+2026-05-14 13:07:14,10.10.20.17,203.0.113.90,GET,/checkin,200,Repeated 5-minute interval
+2026-05-14 13:12:14,10.10.20.17,203.0.113.90,GET,/checkin,200,Repeated 5-minute interval
+2026-05-14 13:18:02,10.10.20.17,198.51.100.25,GET,/api/status,200,Known vendor traffic; lower concern

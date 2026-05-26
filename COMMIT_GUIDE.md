@@ -1,19 +1,19 @@
 # Commit Guide
 
-Avoid generic commits like `Add files via upload`.
+Avoid generic commits like:
 
-Use clear, professional commit messages that describe the security work performed.
+```text
+Add files via upload
+```
+
+Use professional commits that describe the analyst work.
 
 ## Recommended Commit Messages
 
 ```text
-Add suspicious DNS traffic analysis evidence
-Update README evidence screenshots
-Add risk and remediation evidence
-Improve technical validation notes
-Add executive-ready reporting artifacts
+Add suspicious DNS severity analysis and SIEM detection logic
+Add false positive analysis for DNS investigation
+Add DNS-to-HTTP investigation timeline
+Add Splunk Sentinel Chronicle and Sigma detection examples
+Improve network traffic lab framing and limitations
 ```
-
-## Why This Matters
-
-Commit messages are part of the portfolio signal. They show whether the work was uploaded randomly or developed intentionally.

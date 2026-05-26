@@ -3,7 +3,7 @@
 <rect x="20" y="20" width="1240" height="720" rx="24" fill="#e2e8f0"/>
 <rect x="40" y="40" width="1200" height="96" rx="16" fill="#0f172a"/>
 <text x="70" y="82" font-size="30" font-family="Arial" fill="#ffffff" font-weight="700">HTTP Flow Summary</text>
-<text x="70" y="114" font-size="18" font-family="Arial" fill="#cbd5e1">Repeated check-in pattern after suspicious DNS activity</text>
+<text x="70" y="114" font-size="18" font-family="Arial" fill="#cbd5e1">Repeated check-in behavior after suspicious DNS activity</text>
 <rect x="40" y="170" width="220" height="54" fill="#1e293b" stroke="#334155"/>
 <text x="52" y="203" font-size="16" font-family="Arial" fill="#ffffff" font-weight="700">Timestamp</text>
 <rect x="260" y="170" width="170" height="54" fill="#1e293b" stroke="#334155"/>
@@ -23,7 +23,7 @@
 <rect x="620" y="224" width="170" height="54" fill="#ffffff" stroke="#cbd5e1"/>
 <text x="630" y="256" font-size="14" font-family="Arial" fill="#0f172a">/checkin</text>
 <rect x="790" y="224" width="450" height="54" fill="#ffffff" stroke="#cbd5e1"/>
-<text x="800" y="256" font-size="14" font-family="Arial" fill="#0f172a">Suspicious periodic request</text>
+<text x="800" y="256" font-size="14" font-family="Arial" fill="#0f172a">Suspicious periodic request after DNS burst</text>
 <rect x="40" y="278" width="220" height="54" fill="#f1f5f9" stroke="#cbd5e1"/>
 <text x="50" y="310" font-size="14" font-family="Arial" fill="#0f172a">2026-05-14 13:07:14</text>
 <rect x="260" y="278" width="170" height="54" fill="#f1f5f9" stroke="#cbd5e1"/>
@@ -33,7 +33,7 @@
 <rect x="620" y="278" width="170" height="54" fill="#f1f5f9" stroke="#cbd5e1"/>
 <text x="630" y="310" font-size="14" font-family="Arial" fill="#0f172a">/checkin</text>
 <rect x="790" y="278" width="450" height="54" fill="#f1f5f9" stroke="#cbd5e1"/>
-<text x="800" y="310" font-size="14" font-family="Arial" fill="#0f172a">Repeated interval</text>
+<text x="800" y="310" font-size="14" font-family="Arial" fill="#0f172a">Repeated 5-minute interval</text>
 <rect x="40" y="332" width="220" height="54" fill="#ffffff" stroke="#cbd5e1"/>
 <text x="50" y="364" font-size="14" font-family="Arial" fill="#0f172a">2026-05-14 13:12:14</text>
 <rect x="260" y="332" width="170" height="54" fill="#ffffff" stroke="#cbd5e1"/>
@@ -43,7 +43,7 @@
 <rect x="620" y="332" width="170" height="54" fill="#ffffff" stroke="#cbd5e1"/>
 <text x="630" y="364" font-size="14" font-family="Arial" fill="#0f172a">/checkin</text>
 <rect x="790" y="332" width="450" height="54" fill="#ffffff" stroke="#cbd5e1"/>
-<text x="800" y="364" font-size="14" font-family="Arial" fill="#0f172a">Repeated interval</text>
+<text x="800" y="364" font-size="14" font-family="Arial" fill="#0f172a">Repeated 5-minute interval</text>
 <rect x="40" y="386" width="220" height="54" fill="#f1f5f9" stroke="#cbd5e1"/>
 <text x="50" y="418" font-size="14" font-family="Arial" fill="#0f172a">2026-05-14 13:18:02</text>
 <rect x="260" y="386" width="170" height="54" fill="#f1f5f9" stroke="#cbd5e1"/>
@@ -53,6 +53,6 @@
 <rect x="620" y="386" width="170" height="54" fill="#f1f5f9" stroke="#cbd5e1"/>
 <text x="630" y="418" font-size="14" font-family="Arial" fill="#0f172a">/api/status</text>
 <rect x="790" y="386" width="450" height="54" fill="#f1f5f9" stroke="#cbd5e1"/>
-<text x="800" y="418" font-size="14" font-family="Arial" fill="#0f172a">Known vendor traffic</text>
-<text x="40" y="720" font-size="17" font-family="Arial" fill="#475569">Synthetic screenshot for GitHub README and public security portfolio documentation</text>
+<text x="800" y="418" font-size="14" font-family="Arial" fill="#0f172a">Known vendor traffic; lower concern</text>
+<text x="40" y="720" font-size="17" font-family="Arial" fill="#475569">Synthetic lab screenshot for GitHub README and public security portfolio documentation</text>
 </svg>

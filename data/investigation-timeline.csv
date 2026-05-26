@@ -1,0 +1,7 @@
+time,event_type,event,severity
+13:01:22,DNS,First random-looking subdomain query from workstation,Low
+13:01:34-13:01:56,DNS,Burst of similar NXDOMAIN responses using same base domain,Medium
+13:02:11,DNS,New destination resolved after failed random subdomain burst,Medium
+13:02:14,HTTP,Outbound /checkin request to newly observed IP,High
+13:07:14,HTTP,Second /checkin request at 5-minute interval,High
+13:12:14,HTTP,Third /checkin request at 5-minute interval,High

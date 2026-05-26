@@ -1,0 +1,7 @@
+criterion,observation,analyst_reasoning
+Query length,Observed 18-21 characters,Repeated similar lengths can suggest automation
+Subdomain entropy,Short alphanumeric labels,Random-looking labels may indicate generated domains
+Frequency,Multiple queries within 60 seconds,Bursts increase suspicion compared to normal browsing
+Response pattern,Several NXDOMAIN results,Failed generated domains can indicate DGA-like behavior
+New destination,cdn-update.invalid to 203.0.113.90,Newly observed destination requires validation
+HTTP correlation,/checkin every 5 minutes,Repeated callback pattern increases severity

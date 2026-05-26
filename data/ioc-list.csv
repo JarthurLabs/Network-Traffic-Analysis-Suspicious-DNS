@@ -1,5 +1,5 @@
 type,indicator,reason,recommended_action
-Domain,billing-update.test,Suspicious random subdomain pattern,Block and investigate host
-Domain,cdn-update.invalid,New destination after NXDOMAIN burst,Block pending validation
-IP,203.0.113.90,Repeated HTTP check-in pattern,Investigate endpoint
-Host,10.10.20.17,Source of suspicious DNS/HTTP traffic,Isolate for endpoint review
+Domain,billing-update.test,Suspicious repeated random-looking subdomain pattern,Block and investigate host
+Domain,cdn-update.invalid,Newly observed destination after NXDOMAIN burst,Block pending validation
+IP,203.0.113.90,Repeated HTTP check-in pattern,Investigate endpoint and network logs
+Host,10.10.20.17,Source of suspicious DNS and HTTP activity,Isolate for endpoint review

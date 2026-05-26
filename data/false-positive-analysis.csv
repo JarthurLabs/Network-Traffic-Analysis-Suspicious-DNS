@@ -1,0 +1,6 @@
+possible_benign_cause,why_it_can_look_similar,validation_step
+Software update service,Update clients may query CDNs frequently,Check known vendor list and signed process
+Browser prefetching,Browsers may pre-resolve domains,Compare against browser history and normal domains
+Security tool telemetry,EDR/DNS tools may beacon normally,Validate agent/vendor documentation
+Misconfigured internal app,Broken app may create repeated DNS failures,Check asset owner and application logs
+Ad/tracker traffic,Websites can trigger unusual domains,Correlate with user browsing session

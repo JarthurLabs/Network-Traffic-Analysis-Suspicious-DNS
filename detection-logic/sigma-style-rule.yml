@@ -1,0 +1,30 @@
+title: Suspicious DNS Burst Followed by HTTP Check-In
+id: 2d4a7cf0-2ec9-4b16-a7a8-synthetic-lab
+status: experimental
+description: Detects a lab pattern where repeated NXDOMAIN DNS queries are followed by HTTP check-in behavior from the same host.
+references:
+  - Synthetic lab rule for portfolio documentation
+author: JarthurLabs
+date: 2026/05/26
+logsource:
+  category: dns
+  product: network
+detection:
+  selection_dns:
+    response|contains: NXDOMAIN
+  selection_query_shape:
+    query|re: '^[a-z0-9]{6,}\.'
+  condition: selection_dns and selection_query_shape
+fields:
+  - src_ip
+  - query
+  - response
+falsepositives:
+  - Software update services
+  - Browser prefetching
+  - Security tool telemetry
+  - Misconfigured internal applications
+level: medium
+notes: >
+  In a real environment, correlate this DNS pattern with proxy or HTTP logs.
+  Increase severity when repeated HTTP check-ins are observed after the DNS burst.

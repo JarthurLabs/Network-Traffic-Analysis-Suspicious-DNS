@@ -1,6 +1,7 @@
-timestamp,source_host,query,record_type,response,analysis
-2026-05-14 13:01:22,10.10.20.17,a8d3k2.billing-update.test,A,NXDOMAIN,Random-looking subdomain
-2026-05-14 13:01:34,10.10.20.17,b7q9x1.billing-update.test,A,NXDOMAIN,Repeated pattern
-2026-05-14 13:01:45,10.10.20.17,c2m8p4.billing-update.test,A,NXDOMAIN,Repeated pattern
-2026-05-14 13:02:11,10.10.20.17,cdn-update.invalid,A,203.0.113.90,New external destination
-2026-05-14 13:04:44,10.10.20.17,normal-vendor.example,A,198.51.100.25,Known business vendor
+timestamp,source_host,query,query_length,subdomain_length,tld,record_type,response,analysis
+2026-05-14 13:01:22,10.10.20.17,a8d3k2.billing-update.test,19,6,test,A,NXDOMAIN,Random-looking subdomain; first event in burst
+2026-05-14 13:01:34,10.10.20.17,b7q9x1.billing-update.test,19,6,test,A,NXDOMAIN,Similar length and structure; 12 seconds later
+2026-05-14 13:01:45,10.10.20.17,c2m8p4.billing-update.test,19,6,test,A,NXDOMAIN,Third similar query; repeated pattern
+2026-05-14 13:01:56,10.10.20.17,d9v1n7.billing-update.test,19,6,test,A,NXDOMAIN,Continues burst behavior
+2026-05-14 13:02:11,10.10.20.17,cdn-update.invalid,18,10,invalid,A,203.0.113.90,Newly observed destination after NXDOMAIN burst
+2026-05-14 13:04:44,10.10.20.17,normal-vendor.example,21,13,example,A,198.51.100.25,Known business vendor; likely benign

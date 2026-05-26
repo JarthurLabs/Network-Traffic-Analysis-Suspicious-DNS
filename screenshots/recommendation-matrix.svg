@@ -27,23 +27,23 @@
 <rect x="640" y="278" width="140" height="54" fill="#f1f5f9" stroke="#cbd5e1"/>
 <text x="650" y="310" font-size="14" font-family="Arial" fill="#991b1b">High</text>
 <rect x="780" y="278" width="460" height="54" fill="#f1f5f9" stroke="#cbd5e1"/>
-<text x="790" y="310" font-size="14" font-family="Arial" fill="#0f172a">Stops known observed communication</text>
+<text x="790" y="310" font-size="14" font-family="Arial" fill="#0f172a">Stops observed communication pending valida</text>
 <rect x="40" y="332" width="180" height="54" fill="#ffffff" stroke="#cbd5e1"/>
 <text x="50" y="364" font-size="14" font-family="Arial" fill="#0f172a">Detection</text>
 <rect x="220" y="332" width="420" height="54" fill="#ffffff" stroke="#cbd5e1"/>
-<text x="230" y="364" font-size="14" font-family="Arial" fill="#0f172a">Alert on high NXDOMAIN bursts</text>
+<text x="230" y="364" font-size="14" font-family="Arial" fill="#0f172a">Alert on random-looking DNS bursts followed</text>
 <rect x="640" y="332" width="140" height="54" fill="#ffffff" stroke="#cbd5e1"/>
 <text x="650" y="364" font-size="14" font-family="Arial" fill="#92400e">Medium</text>
 <rect x="780" y="332" width="460" height="54" fill="#ffffff" stroke="#cbd5e1"/>
-<text x="790" y="364" font-size="14" font-family="Arial" fill="#0f172a">Improves DNS anomaly detection</text>
+<text x="790" y="364" font-size="14" font-family="Arial" fill="#0f172a">Improves DNS-to-proxy correlation</text>
 <rect x="40" y="386" width="180" height="54" fill="#f1f5f9" stroke="#cbd5e1"/>
 <text x="50" y="418" font-size="14" font-family="Arial" fill="#0f172a">Endpoint</text>
 <rect x="220" y="386" width="420" height="54" fill="#f1f5f9" stroke="#cbd5e1"/>
-<text x="230" y="418" font-size="14" font-family="Arial" fill="#0f172a">Review browser extensions and startup items</text>
+<text x="230" y="418" font-size="14" font-family="Arial" fill="#0f172a">Review browser extensions, startup items, a</text>
 <rect x="640" y="386" width="140" height="54" fill="#f1f5f9" stroke="#cbd5e1"/>
 <text x="650" y="418" font-size="14" font-family="Arial" fill="#92400e">Medium</text>
 <rect x="780" y="386" width="460" height="54" fill="#f1f5f9" stroke="#cbd5e1"/>
-<text x="790" y="418" font-size="14" font-family="Arial" fill="#0f172a">Identifies likely unwanted software</text>
+<text x="790" y="418" font-size="14" font-family="Arial" fill="#0f172a">Identifies likely source of unwanted traffi</text>
 <rect x="40" y="440" width="180" height="54" fill="#ffffff" stroke="#cbd5e1"/>
 <text x="50" y="472" font-size="14" font-family="Arial" fill="#0f172a">Governance</text>
 <rect x="220" y="440" width="420" height="54" fill="#ffffff" stroke="#cbd5e1"/>
@@ -52,5 +52,5 @@
 <text x="650" y="472" font-size="14" font-family="Arial" fill="#166534">Low</text>
 <rect x="780" y="440" width="460" height="54" fill="#ffffff" stroke="#cbd5e1"/>
 <text x="790" y="472" font-size="14" font-family="Arial" fill="#0f172a">Improves follow-up accountability</text>
-<text x="40" y="720" font-size="17" font-family="Arial" fill="#475569">Synthetic screenshot for GitHub README and public security portfolio documentation</text>
+<text x="40" y="720" font-size="17" font-family="Arial" fill="#475569">Synthetic lab screenshot for GitHub README and public security portfolio documentation</text>
 </svg>

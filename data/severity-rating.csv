@@ -1,0 +1,5 @@
+finding,severity,reasoning
+DNS burst of random-looking subdomains,Medium,"Repeated query shape, similar length, short interval, multiple NXDOMAIN responses"
+Newly observed domain after NXDOMAIN burst,Medium,Destination was not previously seen in normal business traffic
+HTTP check-ins to new destination,High,Repeated /checkin path at 5-minute interval after suspicious DNS activity
+Known vendor traffic,Low,Expected domain and endpoint pattern; useful baseline comparison

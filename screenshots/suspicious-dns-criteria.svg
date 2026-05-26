@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="760" viewBox="0 0 1280 760">
+<rect width="1280" height="760" fill="#f8fafc"/>
+<rect x="20" y="20" width="1240" height="720" rx="24" fill="#e2e8f0"/>
+<rect x="40" y="40" width="1200" height="96" rx="16" fill="#0f172a"/>
+<text x="70" y="82" font-size="30" font-family="Arial" fill="#ffffff" font-weight="700">Suspicious DNS Criteria</text>
+<text x="70" y="114" font-size="18" font-family="Arial" fill="#cbd5e1">Beginner-friendly analyst criteria used to explain why the pattern matters</text>
+<rect x="40" y="170" width="240" height="54" fill="#1e293b" stroke="#334155"/>
+<text x="52" y="203" font-size="16" font-family="Arial" fill="#ffffff" font-weight="700">Criterion</text>
+<rect x="280" y="170" width="330" height="54" fill="#1e293b" stroke="#334155"/>
+<text x="292" y="203" font-size="16" font-family="Arial" fill="#ffffff" font-weight="700">Observation</text>
+<rect x="610" y="170" width="590" height="54" fill="#1e293b" stroke="#334155"/>
+<text x="622" y="203" font-size="16" font-family="Arial" fill="#ffffff" font-weight="700">Reasoning</text>
+<rect x="40" y="224" width="240" height="54" fill="#ffffff" stroke="#cbd5e1"/>
+<text x="50" y="256" font-size="14" font-family="Arial" fill="#0f172a">Query length</text>
+<rect x="280" y="224" width="330" height="54" fill="#ffffff" stroke="#cbd5e1"/>
+<text x="290" y="256" font-size="14" font-family="Arial" fill="#0f172a">Observed 18-21 characters</text>
+<rect x="610" y="224" width="590" height="54" fill="#ffffff" stroke="#cbd5e1"/>
+<text x="620" y="256" font-size="14" font-family="Arial" fill="#0f172a">Repeated similar lengths can suggest automa</text>
+<rect x="40" y="278" width="240" height="54" fill="#f1f5f9" stroke="#cbd5e1"/>
+<text x="50" y="310" font-size="14" font-family="Arial" fill="#0f172a">Subdomain entropy</text>
+<rect x="280" y="278" width="330" height="54" fill="#f1f5f9" stroke="#cbd5e1"/>
+<text x="290" y="310" font-size="14" font-family="Arial" fill="#0f172a">Short alphanumeric labels</text>
+<rect x="610" y="278" width="590" height="54" fill="#f1f5f9" stroke="#cbd5e1"/>
+<text x="620" y="310" font-size="14" font-family="Arial" fill="#0f172a">Random-looking labels may indicate generate</text>
+<rect x="40" y="332" width="240" height="54" fill="#ffffff" stroke="#cbd5e1"/>
+<text x="50" y="364" font-size="14" font-family="Arial" fill="#0f172a">Frequency</text>
+<rect x="280" y="332" width="330" height="54" fill="#ffffff" stroke="#cbd5e1"/>
+<text x="290" y="364" font-size="14" font-family="Arial" fill="#0f172a">Multiple queries within 60 seconds</text>
+<rect x="610" y="332" width="590" height="54" fill="#ffffff" stroke="#cbd5e1"/>
+<text x="620" y="364" font-size="14" font-family="Arial" fill="#0f172a">Bursts increase suspicion compared to norma</text>
+<rect x="40" y="386" width="240" height="54" fill="#f1f5f9" stroke="#cbd5e1"/>
+<text x="50" y="418" font-size="14" font-family="Arial" fill="#0f172a">Response pattern</text>
+<rect x="280" y="386" width="330" height="54" fill="#f1f5f9" stroke="#cbd5e1"/>
+<text x="290" y="418" font-size="14" font-family="Arial" fill="#0f172a">Several NXDOMAIN results</text>
+<rect x="610" y="386" width="590" height="54" fill="#f1f5f9" stroke="#cbd5e1"/>
+<text x="620" y="418" font-size="14" font-family="Arial" fill="#0f172a">Failed generated domains can indicate DGA-l</text>
+<rect x="40" y="440" width="240" height="54" fill="#ffffff" stroke="#cbd5e1"/>
+<text x="50" y="472" font-size="14" font-family="Arial" fill="#0f172a">New destination</text>
+<rect x="280" y="440" width="330" height="54" fill="#ffffff" stroke="#cbd5e1"/>
+<text x="290" y="472" font-size="14" font-family="Arial" fill="#0f172a">cdn-update.invalid to 203.0.113.90</text>
+<rect x="610" y="440" width="590" height="54" fill="#ffffff" stroke="#cbd5e1"/>
+<text x="620" y="472" font-size="14" font-family="Arial" fill="#0f172a">Newly observed destination requires validat</text>
+<rect x="40" y="494" width="240" height="54" fill="#f1f5f9" stroke="#cbd5e1"/>
+<text x="50" y="526" font-size="14" font-family="Arial" fill="#0f172a">HTTP correlation</text>
+<rect x="280" y="494" width="330" height="54" fill="#f1f5f9" stroke="#cbd5e1"/>
+<text x="290" y="526" font-size="14" font-family="Arial" fill="#0f172a">/checkin every 5 minutes</text>
+<rect x="610" y="494" width="590" height="54" fill="#f1f5f9" stroke="#cbd5e1"/>
+<text x="620" y="526" font-size="14" font-family="Arial" fill="#0f172a">Repeated callback pattern increases severit</text>
+<text x="40" y="720" font-size="17" font-family="Arial" fill="#475569">Synthetic lab screenshot for GitHub README and public security portfolio documentation</text>
+</svg>

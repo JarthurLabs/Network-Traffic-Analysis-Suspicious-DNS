@@ -17,7 +17,7 @@
 <rect x="180" y="224" width="300" height="54" fill="#ffffff" stroke="#cbd5e1"/>
 <text x="190" y="256" font-size="14" font-family="Arial" fill="#0f172a">billing-update.test</text>
 <rect x="480" y="224" width="390" height="54" fill="#ffffff" stroke="#cbd5e1"/>
-<text x="490" y="256" font-size="14" font-family="Arial" fill="#0f172a">Suspicious random subdomain pattern</text>
+<text x="490" y="256" font-size="14" font-family="Arial" fill="#0f172a">Suspicious repeated random-looking subdomai</text>
 <rect x="870" y="224" width="370" height="54" fill="#ffffff" stroke="#cbd5e1"/>
 <text x="880" y="256" font-size="14" font-family="Arial" fill="#0f172a">Block and investigate host</text>
 <rect x="40" y="278" width="140" height="54" fill="#f1f5f9" stroke="#cbd5e1"/>
@@ -25,7 +25,7 @@
 <rect x="180" y="278" width="300" height="54" fill="#f1f5f9" stroke="#cbd5e1"/>
 <text x="190" y="310" font-size="14" font-family="Arial" fill="#0f172a">cdn-update.invalid</text>
 <rect x="480" y="278" width="390" height="54" fill="#f1f5f9" stroke="#cbd5e1"/>
-<text x="490" y="310" font-size="14" font-family="Arial" fill="#0f172a">New destination after NXDOMAIN burst</text>
+<text x="490" y="310" font-size="14" font-family="Arial" fill="#0f172a">Newly observed destination after NXDOMAIN b</text>
 <rect x="870" y="278" width="370" height="54" fill="#f1f5f9" stroke="#cbd5e1"/>
 <text x="880" y="310" font-size="14" font-family="Arial" fill="#0f172a">Block pending validation</text>
 <rect x="40" y="332" width="140" height="54" fill="#ffffff" stroke="#cbd5e1"/>
@@ -35,14 +35,14 @@
 <rect x="480" y="332" width="390" height="54" fill="#ffffff" stroke="#cbd5e1"/>
 <text x="490" y="364" font-size="14" font-family="Arial" fill="#0f172a">Repeated HTTP check-in pattern</text>
 <rect x="870" y="332" width="370" height="54" fill="#ffffff" stroke="#cbd5e1"/>
-<text x="880" y="364" font-size="14" font-family="Arial" fill="#0f172a">Investigate endpoint</text>
+<text x="880" y="364" font-size="14" font-family="Arial" fill="#0f172a">Investigate endpoint and network logs</text>
 <rect x="40" y="386" width="140" height="54" fill="#f1f5f9" stroke="#cbd5e1"/>
 <text x="50" y="418" font-size="14" font-family="Arial" fill="#0f172a">Host</text>
 <rect x="180" y="386" width="300" height="54" fill="#f1f5f9" stroke="#cbd5e1"/>
 <text x="190" y="418" font-size="14" font-family="Arial" fill="#0f172a">10.10.20.17</text>
 <rect x="480" y="386" width="390" height="54" fill="#f1f5f9" stroke="#cbd5e1"/>
-<text x="490" y="418" font-size="14" font-family="Arial" fill="#0f172a">Source of suspicious DNS/HTTP traffic</text>
+<text x="490" y="418" font-size="14" font-family="Arial" fill="#0f172a">Source of suspicious DNS and HTTP activity</text>
 <rect x="870" y="386" width="370" height="54" fill="#f1f5f9" stroke="#cbd5e1"/>
 <text x="880" y="418" font-size="14" font-family="Arial" fill="#0f172a">Isolate for endpoint review</text>
-<text x="40" y="720" font-size="17" font-family="Arial" fill="#475569">Synthetic screenshot for GitHub README and public security portfolio documentation</text>
+<text x="40" y="720" font-size="17" font-family="Arial" fill="#475569">Synthetic lab screenshot for GitHub README and public security portfolio documentation</text>
 </svg>
