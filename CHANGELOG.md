@@ -1,5 +1,12 @@
 # Changelog
 
+## v5.0 - Operational Realism Pass
+
+- Rewrote README to sound like an analyst workflow rather than a polished project overview
+- Added stronger uncertainty around DNS anomalies and endpoint validation gaps
+- Connected PCAP, tcpdump output, screenshots, and SIEM queries to the investigation flow
+- Added REALISM_REVIEW_NOTES.md and LESSONS_LEARNED.md
+
 ## v4.0 - Hands-On PCAP and Wireshark Evidence Layer
 
 ### Added
