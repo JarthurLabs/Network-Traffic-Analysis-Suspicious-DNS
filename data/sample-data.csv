@@ -1,0 +1,6 @@
+severity_or_type,finding,business_impact,recommended_action
+High,High volume of DNS queries to random subdomains,Possible domain generation algorithm or beaconing behavior.,"Validate evidence, assign owner, document remediation, and retest."
+High,Repeated HTTP connections to newly observed domain,Potential command-and-control callback.,"Validate evidence, assign owner, document remediation, and retest."
+Medium,User workstation had outdated browser plugin,Likely initial infection or unwanted software vector.,"Validate evidence, assign owner, document remediation, and retest."
+Medium,No DNS sinkhole or egress filtering in place,Weak prevention and containment capability.,"Validate evidence, assign owner, document remediation, and retest."
+Low,Asset owner field missing in inventory,Delayed user/device follow-up.,"Validate evidence, assign owner, document remediation, and retest."
