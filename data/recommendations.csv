@@ -1,0 +1,6 @@
+category,recommendation,priority,business_reason
+Containment,Isolate workstation 10.10.20.17,High,Prevents continued callback traffic
+Network Control,Block suspicious domains/IP,High,Stops known observed communication
+Detection,Alert on high NXDOMAIN bursts,Medium,Improves DNS anomaly detection
+Endpoint,Review browser extensions and startup items,Medium,Identifies likely unwanted software
+Governance,Assign asset owner in inventory,Low,Improves follow-up accountability

@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="760" viewBox="0 0 1280 760">
+<rect width="1280" height="760" fill="#f8fafc"/>
+<rect x="20" y="20" width="1240" height="720" rx="24" fill="#e2e8f0"/>
+<rect x="40" y="40" width="1200" height="96" rx="16" fill="#0f172a"/>
+<text x="70" y="82" font-size="30" font-family="Arial" fill="#ffffff" font-weight="700">Indicators of Compromise Table</text>
+<text x="70" y="114" font-size="18" font-family="Arial" fill="#cbd5e1">Observed indicators and recommended defensive action</text>
+<rect x="40" y="170" width="140" height="54" fill="#1e293b" stroke="#334155"/>
+<text x="52" y="203" font-size="16" font-family="Arial" fill="#ffffff" font-weight="700">Type</text>
+<rect x="180" y="170" width="300" height="54" fill="#1e293b" stroke="#334155"/>
+<text x="192" y="203" font-size="16" font-family="Arial" fill="#ffffff" font-weight="700">Indicator</text>
+<rect x="480" y="170" width="390" height="54" fill="#1e293b" stroke="#334155"/>
+<text x="492" y="203" font-size="16" font-family="Arial" fill="#ffffff" font-weight="700">Reason</text>
+<rect x="870" y="170" width="370" height="54" fill="#1e293b" stroke="#334155"/>
+<text x="882" y="203" font-size="16" font-family="Arial" fill="#ffffff" font-weight="700">Action</text>
+<rect x="40" y="224" width="140" height="54" fill="#ffffff" stroke="#cbd5e1"/>
+<text x="50" y="256" font-size="14" font-family="Arial" fill="#0f172a">Domain</text>
+<rect x="180" y="224" width="300" height="54" fill="#ffffff" stroke="#cbd5e1"/>
+<text x="190" y="256" font-size="14" font-family="Arial" fill="#0f172a">billing-update.test</text>
+<rect x="480" y="224" width="390" height="54" fill="#ffffff" stroke="#cbd5e1"/>
+<text x="490" y="256" font-size="14" font-family="Arial" fill="#0f172a">Suspicious random subdomain pattern</text>
+<rect x="870" y="224" width="370" height="54" fill="#ffffff" stroke="#cbd5e1"/>
+<text x="880" y="256" font-size="14" font-family="Arial" fill="#0f172a">Block and investigate host</text>
+<rect x="40" y="278" width="140" height="54" fill="#f1f5f9" stroke="#cbd5e1"/>
+<text x="50" y="310" font-size="14" font-family="Arial" fill="#0f172a">Domain</text>
+<rect x="180" y="278" width="300" height="54" fill="#f1f5f9" stroke="#cbd5e1"/>
+<text x="190" y="310" font-size="14" font-family="Arial" fill="#0f172a">cdn-update.invalid</text>
+<rect x="480" y="278" width="390" height="54" fill="#f1f5f9" stroke="#cbd5e1"/>
+<text x="490" y="310" font-size="14" font-family="Arial" fill="#0f172a">New destination after NXDOMAIN burst</text>
+<rect x="870" y="278" width="370" height="54" fill="#f1f5f9" stroke="#cbd5e1"/>
+<text x="880" y="310" font-size="14" font-family="Arial" fill="#0f172a">Block pending validation</text>
+<rect x="40" y="332" width="140" height="54" fill="#ffffff" stroke="#cbd5e1"/>
+<text x="50" y="364" font-size="14" font-family="Arial" fill="#0f172a">IP</text>
+<rect x="180" y="332" width="300" height="54" fill="#ffffff" stroke="#cbd5e1"/>
+<text x="190" y="364" font-size="14" font-family="Arial" fill="#0f172a">203.0.113.90</text>
+<rect x="480" y="332" width="390" height="54" fill="#ffffff" stroke="#cbd5e1"/>
+<text x="490" y="364" font-size="14" font-family="Arial" fill="#0f172a">Repeated HTTP check-in pattern</text>
+<rect x="870" y="332" width="370" height="54" fill="#ffffff" stroke="#cbd5e1"/>
+<text x="880" y="364" font-size="14" font-family="Arial" fill="#0f172a">Investigate endpoint</text>
+<rect x="40" y="386" width="140" height="54" fill="#f1f5f9" stroke="#cbd5e1"/>
+<text x="50" y="418" font-size="14" font-family="Arial" fill="#0f172a">Host</text>
+<rect x="180" y="386" width="300" height="54" fill="#f1f5f9" stroke="#cbd5e1"/>
+<text x="190" y="418" font-size="14" font-family="Arial" fill="#0f172a">10.10.20.17</text>
+<rect x="480" y="386" width="390" height="54" fill="#f1f5f9" stroke="#cbd5e1"/>
+<text x="490" y="418" font-size="14" font-family="Arial" fill="#0f172a">Source of suspicious DNS/HTTP traffic</text>
+<rect x="870" y="386" width="370" height="54" fill="#f1f5f9" stroke="#cbd5e1"/>
+<text x="880" y="418" font-size="14" font-family="Arial" fill="#0f172a">Isolate for endpoint review</text>
+<text x="40" y="720" font-size="17" font-family="Arial" fill="#475569">Synthetic screenshot for GitHub README and public security portfolio documentation</text>
+</svg>

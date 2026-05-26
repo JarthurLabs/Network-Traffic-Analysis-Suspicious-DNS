@@ -2,71 +2,129 @@
 
 ## Overview
 
-A network analysis project using synthetic DNS and HTTP evidence to identify suspicious domain patterns, possible command-and-control behavior, and recommended detection improvements.
+This repository contains a network traffic analysis investigation using synthetic DNS and HTTP event data. It demonstrates how to identify suspicious DNS patterns, correlate them with outbound HTTP connections, document indicators, and recommend defensive actions.
+
+The focus is practical analyst work: review network events, identify patterns, separate normal vendor traffic from suspicious behavior, document indicators, and explain containment recommendations.
+
+> All hosts, domains, IP addresses, timestamps, and traffic records are synthetic and safe for public use.
+
+---
 
 ## Scenario
 
-A workstation generated unusual DNS traffic to random-looking subdomains after a user reported browser pop-ups and system slowness.
+A billing workstation generated a burst of random-looking DNS queries followed by repeated HTTP connections to a newly observed destination. The user also reported browser pop-ups and system slowness. The analyst needs to determine whether the activity is benign, suspicious, or requires containment.
+
+The investigation answers five questions:
+
+1. Which host generated the suspicious traffic?
+2. What DNS pattern was observed?
+3. Did the DNS activity correlate with outbound HTTP traffic?
+4. What indicators should be documented?
+5. What defensive actions should be recommended?
+
+---
 
 ## Target Roles
 
-SOC Analyst, Cybersecurity Analyst
+| Role | Why This Repository Fits |
+|---|---|
+| SOC Analyst | Shows network event review, IOC documentation, and triage logic |
+| Cybersecurity Analyst | Demonstrates DNS/HTTP analysis and defensive recommendations |
+| Incident Response Analyst, beginner | Connects suspicious traffic to containment steps |
+| Security Implementation Specialist | Connects findings to DNS filtering, logging, and endpoint hardening improvements |
 
-## Tools and Concepts Used
+---
 
-Wireshark/tcpdump concepts, DNS analysis, HTTP metadata review, IOC documentation
+## Core Deliverables
 
-## Key Findings
+| Area | Deliverables |
+|---|---|
+| DNS Analysis | Synthetic DNS event review and suspicious pattern notes |
+| HTTP Correlation | Outbound connection review after DNS anomalies |
+| IOC Documentation | Domain, IP, and host indicators |
+| Detection Logic | DNS anomaly and HTTP check-in detection examples |
+| Response | Containment and remediation recommendations |
+| Reporting | Executive summary and analyst report |
 
-| Severity / Type | Finding | Why It Matters |
-|---|---|---|
-| High | High volume of DNS queries to random subdomains | Possible domain generation algorithm or beaconing behavior. |
-| High | Repeated HTTP connections to newly observed domain | Potential command-and-control callback. |
-| Medium | User workstation had outdated browser plugin | Likely initial infection or unwanted software vector. |
-| Medium | No DNS sinkhole or egress filtering in place | Weak prevention and containment capability. |
-| Low | Asset owner field missing in inventory | Delayed user/device follow-up. |
+---
 
-## What I Did
+## Analysis Workflow
 
-1. Defined the scope and business scenario.
-2. Reviewed synthetic evidence/data.
-3. Identified security issues and mapped them to business risk.
-4. Prioritized findings by severity and likelihood.
-5. Wrote remediation or improvement recommendations.
-6. Documented the project in a way a recruiter, hiring manager, or technical reviewer can follow.
+![Analysis Workflow](./screenshots/analysis-workflow.svg)
 
-## Screenshots
+---
 
-![Project Summary](./screenshots/project-summary.svg)
+## DNS Activity Dashboard
 
-## Interview Explanation
+The DNS dashboard shows repeated random-looking queries from one internal workstation.
 
-This project shows that I can look at network behavior, not just individual alerts. I can explain why repeated DNS lookups and unusual domains matter and how defenders can reduce risk.
+![DNS Activity Dashboard](./screenshots/dns-activity-dashboard.svg)
 
-## How to Confidently Explain This Project
+---
 
-Use this structure:
+## HTTP Flow Summary
 
-1. **Situation:** Explain the business problem.
-2. **Task:** Explain what security question you were trying to answer.
-3. **Action:** Explain your investigation or review steps.
-4. **Result:** Explain what you found and what you recommended.
+The HTTP flow summary shows repeated outbound check-ins after the suspicious DNS activity.
 
-Example:
+![HTTP Flow Summary](./screenshots/http-flow-summary.svg)
 
-> I created this project to practice the workflow used by security teams: define scope, collect evidence, identify risk, prioritize what matters, and communicate next steps. I used synthetic data so the project is safe to publish, but the process mirrors how entry-level analysts contribute in real environments.
+---
 
-## Beginner Mistakes This Project Avoids
+## IOC Table
 
-- Listing tools without explaining the security outcome.
-- Treating every alert or finding as equally important.
-- Forgetting to explain business impact.
-- Publishing real logs, IP addresses, client data, or secrets.
-- Writing notes that only the author can understand.
+Indicators are documented with reason and recommended defensive action.
 
-## Files Included
+![IOC Table](./screenshots/ioc-table.svg)
 
-- `README.md` - Project overview and explanation.
-- `data/sample-data.csv` - Synthetic evidence used for the project.
-- `reports/final-report.md` - Polished report-style writeup.
-- `screenshots/project-summary.svg` - Public-safe screenshot mockup.
+---
+
+## Recommendation Matrix
+
+Recommendations are prioritized by security value and business reason.
+
+![Recommendation Matrix](./screenshots/recommendation-matrix.svg)
+
+---
+
+## Repository Structure
+
+```text
+.
+├── README.md
+├── CHANGELOG.md
+├── COMMIT_GUIDE.md
+├── traffic-analysis/
+├── data/
+├── evidence/
+├── detection-logic/
+├── response/
+├── reports/
+├── screenshots/
+└── templates/
+```
+
+---
+
+## Key Evidence Files
+
+| File | Purpose |
+|---|---|
+| `data/dns-events.csv` | Synthetic DNS query evidence |
+| `data/http-connections.csv` | Synthetic outbound HTTP flow evidence |
+| `data/ioc-list.csv` | Indicator list with action recommendations |
+| `data/recommendations.csv` | Defensive recommendation matrix |
+| `traffic-analysis/dns-analysis-notes.md` | Analyst review of DNS behavior |
+| `traffic-analysis/http-correlation-notes.md` | DNS-to-HTTP correlation notes |
+| `detection-logic/detection-ideas.md` | Defensive detection concepts |
+
+---
+
+## Analyst Conclusion
+
+The activity should be treated as suspicious because one workstation generated repeated random-looking DNS queries and then made repeated outbound HTTP requests to a newly observed destination. The recommended response is to isolate the host, block observed indicators pending validation, review endpoint telemetry, and improve DNS anomaly detection.
+
+---
+
+## Limitations
+
+This is a synthetic network traffic analysis project. It does not contain real packet captures, malware, production logs, or customer data.
