@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="940" height="410" viewBox="0 0 940 410">
+  <rect width="940" height="410" fill="#f8fafc"/>
+  <text x="42" y="52" font-family="Georgia, serif" font-size="28" fill="#0f172a">Signal strength changed as evidence lined up</text>
+  <text x="44" y="82" font-family="Arial" font-size="14" fill="#475569">The project avoids treating one weird DNS event as proof. The correlation is what moved it forward.</text>
+
+  <rect x="72" y="125" width="230" height="205" rx="12" fill="#ffffff" stroke="#cbd5e1"/>
+  <text x="98" y="160" font-family="Arial" font-size="19" font-weight="bold" fill="#334155">Weak signal</text>
+  <circle cx="105" cy="202" r="10" fill="#facc15"/>
+  <text x="130" y="207" font-family="Arial" font-size="14" fill="#1f2937">random subdomains</text>
+  <circle cx="105" cy="240" r="10" fill="#facc15"/>
+  <text x="130" y="245" font-family="Arial" font-size="14" fill="#1f2937">NXDOMAIN burst</text>
+  <text x="98" y="292" font-family="Arial" font-size="13" fill="#64748b">Could still be benign.</text>
+
+  <rect x="355" y="118" width="230" height="220" rx="12" fill="#fff7ed" stroke="#fb923c"/>
+  <text x="381" y="154" font-family="Arial" font-size="19" font-weight="bold" fill="#9a3412">Stronger signal</text>
+  <circle cx="388" cy="197" r="10" fill="#fb923c"/>
+  <text x="413" y="202" font-family="Arial" font-size="14" fill="#1f2937">same workstation</text>
+  <circle cx="388" cy="235" r="10" fill="#fb923c"/>
+  <text x="413" y="240" font-family="Arial" font-size="14" fill="#1f2937">HTTP /checkin repeats</text>
+  <circle cx="388" cy="273" r="10" fill="#fb923c"/>
+  <text x="413" y="278" font-family="Arial" font-size="14" fill="#1f2937">new destination</text>
+  <text x="381" y="315" font-family="Arial" font-size="13" fill="#9a3412">Worth endpoint validation.</text>
+
+  <rect x="638" y="125" width="230" height="205" rx="12" fill="#ecfeff" stroke="#0891b2"/>
+  <text x="664" y="160" font-family="Arial" font-size="19" font-weight="bold" fill="#155e75">Missing proof</text>
+  <circle cx="671" cy="202" r="10" fill="#94a3b8"/>
+  <text x="696" y="207" font-family="Arial" font-size="14" fill="#1f2937">process name</text>
+  <circle cx="671" cy="240" r="10" fill="#94a3b8"/>
+  <text x="696" y="245" font-family="Arial" font-size="14" fill="#1f2937">EDR telemetry</text>
+  <circle cx="671" cy="278" r="10" fill="#94a3b8"/>
+  <text x="696" y="283" font-family="Arial" font-size="14" fill="#1f2937">user context</text>
+  <text x="664" y="315" font-family="Arial" font-size="13" fill="#155e75">Do not overclaim.</text>
+</svg>
