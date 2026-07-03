@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="920" height="520" viewBox="0 0 920 520">
+  <rect width="920" height="520" fill="#111827"/>
+  <rect x="55" y="45" width="810" height="420" rx="10" fill="#ffffff"/>
+  <rect x="55" y="45" width="810" height="66" fill="#134e4a"/>
+  <text x="86" y="86" font-family="Arial" font-size="24" font-weight="bold" fill="#ecfeff">Network alert ticket — DNS + HTTP pattern</text>
+  <text x="700" y="86" font-family="Arial" font-size="15" fill="#a7f3d0">Severity: High</text>
+
+  <text x="88" y="150" font-family="Arial" font-size="13" fill="#64748b">Alert</text>
+  <text x="238" y="150" font-family="Arial" font-size="16" fill="#111827">Suspicious DNS burst followed by repeated HTTP check-ins</text>
+  <line x1="88" y1="164" x2="820" y2="164" stroke="#d1d5db"/>
+
+  <text x="88" y="198" font-family="Arial" font-size="13" fill="#64748b">Source host</text>
+  <text x="238" y="198" font-family="Arial" font-size="16" fill="#111827">10.10.20.17</text>
+  <line x1="88" y1="212" x2="820" y2="212" stroke="#d1d5db"/>
+
+  <text x="88" y="246" font-family="Arial" font-size="13" fill="#64748b">Evidence</text>
+  <text x="238" y="246" font-family="Arial" font-size="16" fill="#111827">Random-looking subdomains, NXDOMAIN responses, then /checkin traffic</text>
+  <line x1="88" y1="260" x2="820" y2="260" stroke="#d1d5db"/>
+
+  <text x="88" y="294" font-family="Arial" font-size="13" fill="#64748b">Why fired</text>
+  <text x="238" y="294" font-family="Arial" font-size="16" fill="#111827">DNS anomaly became stronger after it correlated with HTTP behavior</text>
+  <line x1="88" y1="308" x2="820" y2="308" stroke="#d1d5db"/>
+
+  <text x="88" y="342" font-family="Arial" font-size="13" fill="#64748b">Recommended action</text>
+  <text x="238" y="342" font-family="Arial" font-size="16" fill="#111827">Validate endpoint process, browser activity, installed software, and EDR logs</text>
+  <line x1="88" y1="356" x2="820" y2="356" stroke="#d1d5db"/>
+
+  <text x="88" y="390" font-family="Arial" font-size="13" fill="#64748b">MITRE</text>
+  <text x="238" y="390" font-family="Arial" font-size="16" fill="#111827">Possible DNS / C2 behavior, pending endpoint confirmation</text>
+  <line x1="88" y1="404" x2="820" y2="404" stroke="#d1d5db"/>
+
+  <text x="88" y="438" font-family="Courier New" font-size="13" fill="#475569">Disposition: suspicious network activity, not confirmed malware</text>
+</svg>
