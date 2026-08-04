@@ -9,7 +9,10 @@ if ! command -v tshark >/dev/null 2>&1; then
   exit 127
 fi
 
-sha256sum --check captures/SHA256SUMS
+(
+  cd captures
+  sha256sum --check SHA256SUMS
+)
 mkdir -p "$output_dir"
 
 tshark -r "$pcap" -Y dns -T fields \
