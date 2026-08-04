@@ -46,13 +46,15 @@ The hardest part was not finding weird traffic. The hard part was resisting the 
 |---|---|
 | ![DNS alert ticket](docs/images/dns-alert-ticket.svg) | ![DNS signal scorecard](docs/images/dns-signal-scorecard.svg) |
 
-| DNS filter view | HTTP filter view |
+| DNS filter diagram | HTTP filter diagram |
 |---|---|
-| ![Wireshark DNS Filter](./screenshots/wireshark-dns-filter.svg) | ![Wireshark HTTP Filter](./screenshots/wireshark-http-filter.svg) |
+| ![Illustrated DNS filter](./screenshots/wireshark-dns-filter.svg) | ![Illustrated HTTP filter](./screenshots/wireshark-http-filter.svg) |
 
-| Packet observations | Investigation notes |
+| Packet-observation diagram | Investigation-path diagram |
 |---|---|
-| ![Packet Observations](./screenshots/packet-observations.svg) | ![DNS investigation path](docs/images/dns-investigation-path.svg) |
+| ![Illustrated packet observations](./screenshots/packet-observations.svg) | ![DNS investigation path](docs/images/dns-investigation-path.svg) |
+
+The SVG panels above are explanatory diagrams built for the portfolio. They are not Wireshark screenshots. The PCAP, its SHA-256, the stored tcpdump text, and the workflow-generated TShark tables are the packet evidence.
 
 ---
 
@@ -71,6 +73,9 @@ The severity increased when the same host later made repeated HTTP requests to `
 | Benign lab PCAP | `captures/benign-dns-http-lab.pcap` |
 | tcpdump DNS output | `tool-output/tcpdump-dns-output.txt` |
 | tcpdump HTTP output | `tool-output/tcpdump-http-output.txt` |
+| Capture provenance and limitations | `captures/PROVENANCE.md` |
+| Capture SHA-256 manifest | `captures/SHA256SUMS` |
+| Repeatable TShark command | `scripts/analyze_pcap.sh` |
 | DNS event data | `data/dns-events.csv` |
 | HTTP connection data | `data/http-connections.csv` |
 | Timeline | `data/investigation-timeline.csv` |
@@ -115,6 +120,20 @@ The initial packet output was noisy, so the review was narrowed to DNS first, th
 
 ---
 
+## Reproduce the packet review
+
+```bash
+python scripts/validate_capture.py
+python -m unittest discover -s tests -v
+bash scripts/analyze_pcap.sh
+```
+
+The shell command requires TShark. Continuous integration installs it, verifies the original PCAP hash and packet count, then uploads fresh DNS and HTTP TSV tables as a workflow artifact. Those tables come from the PCAP—not from the scenario CSVs.
+
+The original packet-generation command was not preserved. The provenance note says that plainly, because a mystery command does not become less mysterious when placed next to a green badge.
+
+---
+
 ## Why this was suspicious
 
 | Signal | Why it mattered |
@@ -131,12 +150,15 @@ The initial packet output was noisy, so the review was narrowed to DNS first, th
 
 ```text
 Network-Traffic-Analysis-Suspicious-DNS/
-├── captures/                     # Benign lab PCAP
+├── captures/                     # Benign lab PCAP, provenance, and SHA-256
 ├── data/                         # Synthetic DNS, HTTP, and timeline data
 ├── detection-logic/              # Detection examples
 ├── docs/                         # Analyst journal and portfolio visuals
 │   └── images/                   # README visuals
-├── screenshots/                  # Original SVG packet screenshots
+├── screenshots/                  # Explanatory SVG diagrams, not packet screenshots
+├── scripts/                      # Capture validation and TShark analysis
+├── tests/                        # Hash and packet-structure tests
+├── .github/workflows/            # Recreates TShark tables in CI
 ├── tool-output/                  # tcpdump output samples
 ├── traffic-analysis/             # Packet notes and false positive analysis
 └── README.md
@@ -182,4 +204,4 @@ Without endpoint telemetry, process information, browser history, or EDR data, t
 
 ## Important note
 
-This is a defensive portfolio lab using fictional and safe lab data. It is meant to show investigation reasoning, not to claim confirmed malware analysis experience.
+This is a defensive portfolio lab using fictional scenario data plus one safe, self-generated packet capture. The capture proves only the packets it contains; it does not prove malware, endpoint execution, or production incident response. The code is available under the MIT License.
